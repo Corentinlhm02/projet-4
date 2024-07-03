@@ -42,6 +42,11 @@ body {
 
 .social-link img {
 	width: 20px;
+	height: 20px;
+}
+
+.d-block {
+	height: 100%;
 }
 
 #about {
@@ -71,6 +76,7 @@ body {
 
 .picture img {
 	width: 100%;
+	height: 100%;
 }
 
 #about-me {
@@ -109,6 +115,10 @@ body {
 	color: #000000;
 	background-color: #BEB45A;
 	border-radius: 0;
+}
+
+.nav-pills:hover {
+	cursor: pointer;
 }
 
 .nav-pills .nav-link {
@@ -159,6 +169,7 @@ body {
 	font-family: Spectral;
 	font-style: italic;
 	font-weight: 300;
+	font-size: 2.5rem;
 
 }
 
@@ -271,7 +282,10 @@ footer {
 	background: #1C6474;
 }
 
-footer span, footer a, footer p, address {
+footer span,
+footer a,
+footer p,
+address {
 	color: white;
 	margin-top: 1rem;
 }
