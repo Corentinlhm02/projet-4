@@ -15,19 +15,20 @@
 	<meta property="og:local" content="fr_FR">
 	<meta property="article:author" content="Nina Carducc">
 	<meta property="article:published_time" content="24/06/2024">
-	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
-	<link rel="stylesheet" href="./assets/style.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com" defer>
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
-		rel="stylesheet">
-	<!-- Balises Twitter Cards -->
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:site" content="@votrecompte" />
 	<meta name="twitter:title" content="Nina Carducci" />
 	<meta name="twitter:description" content="Nina Carducci photographe à votre service" />
 	<meta name="twitter:image" content="/" />
+	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/style.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com" defer>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
+		rel="stylesheet">
+
 	<script type="application/ld+json">
 		{
 		  "@context": "http://schema.org",
@@ -99,8 +100,8 @@
 						<picture>
 							<source srcset="./assets/images/slider/ryoji-iwata-sliderMobile.webp"
 								media="(max-width: 768px)" />
-							<img src="./assets/images/slider/ryoji-iwata.webp" class="d-block w-100"
-								alt="photo d'une personne qui traverse" loading="lazy">
+							<img src="./assets/images/slider/ryoji-iwata.webp" class="d-block w-100" fetchpriority="low"
+								alt="photo d'une personne qui traverse">
 						</picture>
 					</div>
 					<div class="carousel-item">
@@ -108,7 +109,7 @@
 							<source srcset="./assets/images/slider/nicholas-green-sliderMobile.webp"
 								media="(max-width: 768px)" />
 							<img src="./assets/images/slider/nicholas-green.webp" class="d-block w-100"
-								alt="photo de groupe de personnes" loading="lazy">
+								fetchpriority="low" alt="photo de groupe de personnes">
 						</picture>
 					</div>
 					<div class="carousel-item">
@@ -116,7 +117,7 @@
 							<source srcset="./assets/images/slider/mariageDanseSliderMobile.webp"
 								media="(max-width: 768px)" />
 							<img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp"
-								class="d-block w-100" alt="photo de mariage" loading="lazy">
+								class="d-block w-100" fetchpriority="low" alt="photo de mariage">
 						</picture>
 					</div>
 				</div>
@@ -157,11 +158,11 @@
 				<div class="container py-3">
 					<div class="gallery" style="display: none">
 						<img data-gallery-tag="Concert" class="gallery-item"
-							src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp" loading="lazy"
+							src="./assets/images/gallery/concerts/aaron-paul.webp" loading="lazy"
 							alt="photo du concert de aaron-paul" />
 						<img data-gallery-tag="Entreprises" class="gallery-item"
-							src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp"
-							loading="lazy" alt="photo de ali" />
+							src="./assets/images/gallery/entreprise/ali-morshedlou.webp" loading="lazy"
+							alt="photo de ali" />
 						<img data-gallery-tag="Entreprises" class="gallery-item"
 							src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp"
 							loading="lazy" alt="photo de jason" />
@@ -169,14 +170,14 @@
 							src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp" loading="lazy"
 							alt="mariage de hannah" />
 						<img data-gallery-tag="Portrait" class="gallery-item"
-							src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp" loading="lazy"
+							src="./assets/images/gallery/portraits/ade-tunji.webp" loading="lazy"
 							alt="Portrait de ade" />
 						<img data-gallery-tag="Mariages" class="gallery-item"
 							src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp" loading="lazy"
 							alt="mariage de jakob" />
 						<img data-gallery-tag="Portrait" class="gallery-item"
-							src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp"
-							loading="lazy" alt="portrait de nino" />
+							src="./assets/images/gallery/portraits/nino-van.webp" 
+							alt="portrait de nino" />
 						<img data-gallery-tag="Concert" class="gallery-item"
 							src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp" loading="lazy"
 							alt="concert de austin" />
@@ -275,10 +276,9 @@
 		</address>
 	</footer>
 	<script src="./assets/bootstrap/bootstrap.bundle.js"></script>
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
-		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="./assets/maugallery.js"></script>
 	<script src="./assets/scripts.js"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </body>
 
 </html>
